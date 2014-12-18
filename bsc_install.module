@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BSC Install feature.
+ */
+
+include_once 'bsc_install.features.inc';
