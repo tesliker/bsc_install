@@ -1293,21 +1293,22 @@ function bsc_install_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'label' => 'Overlay Body',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 3,
     ),
   );
 
@@ -1392,7 +1393,7 @@ function bsc_install_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 33,
+      'weight' => 5,
     ),
   );
 
@@ -1446,7 +1447,48 @@ function bsc_install_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 37,
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-slideshow_image-field_overlay_position'
+  $field_instances['node-slideshow_image-field_overlay_position'] = array(
+    'bundle' => 'slideshow_image',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Top Left',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_overlay_position',
+    'label' => 'Overlay Position',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
     ),
   );
 
@@ -1487,7 +1529,7 @@ function bsc_install_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 34,
+      'weight' => 6,
     ),
   );
 
@@ -1524,7 +1566,7 @@ function bsc_install_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 35,
+      'weight' => 7,
     ),
   );
 
@@ -1585,6 +1627,8 @@ function bsc_install_field_default_field_instances() {
   t('Link');
   t('Links Type');
   t('Order total');
+  t('Overlay Body');
+  t('Overlay Position');
   t('Price');
   t('Product');
   t('Slideshow Type');

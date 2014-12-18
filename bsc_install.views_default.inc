@@ -120,7 +120,6 @@ function bsc_install_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'flexslider';
-  $handler->display->display_options['style_options']['captionfield'] = 'title';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -158,14 +157,23 @@ function bsc_install_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: Overlay Position */
+  $handler->display->display_options['fields']['field_overlay_position']['id'] = 'field_overlay_position';
+  $handler->display->display_options['fields']['field_overlay_position']['table'] = 'field_data_field_overlay_position';
+  $handler->display->display_options['fields']['field_overlay_position']['field'] = 'field_overlay_position';
+  $handler->display->display_options['fields']['field_overlay_position']['label'] = '';
+  $handler->display->display_options['fields']['field_overlay_position']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_overlay_position']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_overlay_position']['type'] = 'list_key';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="slideshow-overlay-wrapper">
-    <div class="slideshow-overlay">
+    <div class="slideshow-overlay [field_overlay_position]">
         <h1>[title]</h1>
         <p>[body]</p>
     </div>

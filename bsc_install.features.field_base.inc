@@ -357,6 +357,34 @@ function bsc_install_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_overlay_position'
+  $field_bases['field_overlay_position'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_overlay_position',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'top-left' => 'Top Left',
+        'top-right' => 'Top Right',
+        'bottom-left' => 'Bottom Left',
+        'bottom-right' => 'Bottom Right',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_product'
   $field_bases['field_product'] = array(
     'active' => 1,
