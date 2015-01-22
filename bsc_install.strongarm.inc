@@ -42,7 +42,7 @@ function bsc_install_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'advagg_cron_timestamp';
-  $strongarm->value = 1418911872;
+  $strongarm->value = 1421944092;
   $export['advagg_cron_timestamp'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -115,21 +115,21 @@ function bsc_install_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1418911872;
+  $strongarm->value = 1421944092;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'ngse9b';
+  $strongarm->value = 'nil72z';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1418911910;
+  $strongarm->value = 1421944132;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -460,22 +460,21 @@ function bsc_install_strongarm() {
     27 => 29,
     28 => 28,
     29 => 24,
-    30 => 23,
-    31 => 22,
-    32 => 21,
-    33 => 20,
-    34 => 15,
-    35 => 14,
-    36 => 13,
-    37 => 11,
-    38 => 10,
-    39 => 7,
-    40 => 6,
-    41 => 5,
-    42 => 4,
-    43 => 3,
-    44 => 2,
-    45 => 1,
+    30 => 22,
+    31 => 21,
+    32 => 20,
+    33 => 15,
+    34 => 14,
+    35 => 13,
+    36 => 11,
+    37 => 10,
+    38 => 7,
+    39 => 6,
+    40 => 5,
+    41 => 4,
+    42 => 3,
+    43 => 2,
+    44 => 1,
   );
   $export['menu_masks'] = $strongarm;
 
@@ -539,7 +538,7 @@ function bsc_install_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_cron_last';
-  $strongarm->value = '1418911872';
+  $strongarm->value = '1421944092';
   $export['node_cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1330,14 +1329,14 @@ Disallow: /?q=user/logout/
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1418911915;
+  $strongarm->value = 1421944138;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1418911872;
+  $strongarm->value = 1421944092;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1397,40 +1396,6 @@ Disallow: /?q=user/logout/
   $strongarm->name = 'views_hide_help_message';
   $strongarm->value = TRUE;
   $export['views_hide_help_message'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'xmlsitemap_generated_last';
-  $strongarm->value = 1418911872;
-  $export['xmlsitemap_generated_last'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'xmlsitemap_regenerate_needed';
-  $strongarm->value = FALSE;
-  $export['xmlsitemap_regenerate_needed'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'xmlsitemap_settings_node_links';
-  $strongarm->value = array(
-    'status' => '1',
-    'priority' => '0.5',
-  );
-  $export['xmlsitemap_settings_node_links'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'xmlsitemap_settings_node_slideshow_image';
-  $strongarm->value = array(
-    'status' => '0',
-    'priority' => '0.5',
-  );
-  $export['xmlsitemap_settings_node_slideshow_image'] = $strongarm;
 
   return $export;
 }
