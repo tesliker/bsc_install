@@ -84,11 +84,46 @@ function bsc_install_context_default_contexts() {
           'region' => 'header',
           'weight' => '-16',
         ),
+        'views-recent_news-block' => array(
+          'module' => 'views',
+          'delta' => 'recent_news-block',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
   $context->condition_mode = 0;
   $export['front_page'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'news_or_blog';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'views' => array(
+      'values' => array(
+        'recent_news' => 'recent_news',
+        'recent_news:page_1' => 'recent_news:page_1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-archive-block' => array(
+          'module' => 'views',
+          'delta' => 'archive-block',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['news_or_blog'] = $context;
 
   return $export;
 }
