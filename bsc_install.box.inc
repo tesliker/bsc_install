@@ -94,12 +94,12 @@ function bsc_install_default_box() {
 	<div class="col-lg-10">Mark Devine and his team are perfectly placed to represent clients with their immigration matters having personally immigrated to the U.S. Mark, born in Coventry, England, first came to the U.S. in O-1 status (non-immigrant with extraordinary ability in athletics), then he was granted Lawful Permanent Residence Status based as an EB-1 (immigrant with extraordinary ability), and while in law school he naturalized as a U.S. citizen.</div>
 
 	<div class="col-lg-2 text-center"><br />
-		<a class="btn btn-large btn-theme pull-right" href="/mark-j-devine-us-citizenship-immigration-services">Know More</a></div>
+		<a class="btn btn-primary btn-theme pull-right" href="/mark-j-devine-us-citizenship-immigration-services">Know More</a></div>
 </div>
-
 ',
       'format' => 'full_html',
     ),
+    'additional_classes' => '',
   );
   $export['install_boxes_5'] = $box;
 
@@ -129,12 +129,13 @@ function bsc_install_default_box() {
 
 		<p>&nbsp;</p>
 
-		<p><a class="btn" href="/contact-mark-devine">Contact Page</a></p>
+		<p><a class="btn btn-primary" href="/contact-mark-devine">Contact Page</a></p>
 	</address>
 </address>
 ',
       'format' => 'full_html',
     ),
+    'additional_classes' => '',
   );
   $export['install_boxes_6'] = $box;
 

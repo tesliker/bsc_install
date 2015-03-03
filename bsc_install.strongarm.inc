@@ -42,7 +42,7 @@ function bsc_install_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'advagg_cron_timestamp';
-  $strongarm->value = 1421944092;
+  $strongarm->value = 1424971511;
   $export['advagg_cron_timestamp'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -115,21 +115,21 @@ function bsc_install_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1421944092;
+  $strongarm->value = 1424971511;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nil72z';
+  $strongarm->value = 'nkn625';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1421944132;
+  $strongarm->value = 1424971551;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -163,6 +163,41 @@ function bsc_install_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__article';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__links';
   $strongarm->value = array(
     'view_modes' => array(),
@@ -188,7 +223,29 @@ function bsc_install_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__page';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
@@ -459,22 +516,23 @@ function bsc_install_strongarm() {
     26 => 30,
     27 => 29,
     28 => 28,
-    29 => 24,
-    30 => 22,
-    31 => 21,
-    32 => 20,
-    33 => 15,
-    34 => 14,
-    35 => 13,
-    36 => 11,
-    37 => 10,
-    38 => 7,
-    39 => 6,
-    40 => 5,
-    41 => 4,
-    42 => 3,
-    43 => 2,
-    44 => 1,
+    29 => 27,
+    30 => 24,
+    31 => 22,
+    32 => 21,
+    33 => 20,
+    34 => 15,
+    35 => 14,
+    36 => 13,
+    37 => 11,
+    38 => 10,
+    39 => 7,
+    40 => 6,
+    41 => 5,
+    42 => 4,
+    43 => 3,
+    44 => 2,
+    45 => 1,
   );
   $export['menu_masks'] = $strongarm;
 
@@ -515,15 +573,10 @@ function bsc_install_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_recent_modules';
   $strongarm->value = array(
-    'link' => 1418453122,
-    'php' => 1418455325,
-    'flexslider' => 1418455253,
-    'flexslider_views' => 1418455253,
-    'context_ui' => 1418500278,
-    'boxes' => 1418744921,
-    'fe_block' => 1418745414,
-    'fe_nodequeue' => 1418745474,
-    'panels_mini' => 1418746583,
+    'test' => 1424976362,
+    'devel' => 1424973028,
+    'bsc_theme_colors' => 1424976564,
+    'jquery_colorpicker' => 1424982209,
   );
   $export['module_filter_recent_modules'] = $strongarm;
 
@@ -538,7 +591,7 @@ function bsc_install_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_cron_last';
-  $strongarm->value = '1421944092';
+  $strongarm->value = '1424971511';
   $export['node_cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1329,14 +1382,14 @@ Disallow: /?q=user/logout/
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1421944138;
+  $strongarm->value = 1424971556;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1421944092;
+  $strongarm->value = 1424971511;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();
