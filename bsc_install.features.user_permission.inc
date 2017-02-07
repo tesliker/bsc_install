@@ -1685,15 +1685,6 @@ function bsc_install_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'view seo_checklist checklistapi checklist'.
-  $permissions['view seo_checklist checklistapi checklist'] = array(
-    'name' => 'view seo_checklist checklistapi checklist',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'checklistapi',
-  );
-
   // Exported permission: 'view the administration theme'.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
