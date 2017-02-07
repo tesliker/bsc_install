@@ -1301,15 +1301,6 @@ function bsc_install_user_default_permissions() {
     'module' => 'webform',
   );
 
-  // Exported permission: 'edit seo_checklist checklistapi checklist'.
-  $permissions['edit seo_checklist checklistapi checklist'] = array(
-    'name' => 'edit seo_checklist checklistapi checklist',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'checklistapi',
-  );
-
   // Exported permission: 'edit terms in tags'.
   $permissions['edit terms in tags'] = array(
     'name' => 'edit terms in tags',
