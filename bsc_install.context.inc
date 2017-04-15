@@ -33,8 +33,8 @@ function bsc_install_context_default_contexts() {
           'weight' => '-10',
         ),
         'system-main-menu' => array(
-          'module' => 'superfish',
-          'delta' => '1',
+          'module' => 'system',
+          'delta' => 'main-menu',
           'region' => 'navigation',
           'weight' => '-10',
         ),
