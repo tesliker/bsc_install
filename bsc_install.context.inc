@@ -32,7 +32,7 @@ function bsc_install_context_default_contexts() {
           'region' => 'branding_left',
           'weight' => '-10',
         ),
-        'superfish-1' => array(
+        'system-main-menu' => array(
           'module' => 'superfish',
           'delta' => '1',
           'region' => 'navigation',
