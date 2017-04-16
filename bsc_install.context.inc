@@ -32,12 +32,6 @@ function bsc_install_context_default_contexts() {
           'region' => 'branding_left',
           'weight' => '-10',
         ),
-        'system-main-menu' => array(
-          'module' => 'system',
-          'delta' => 'main-menu',
-          'region' => 'navigation',
-          'weight' => '-10',
-        ),
         'panels_mini-footer' => array(
           'module' => 'panels_mini',
           'delta' => 'footer',
