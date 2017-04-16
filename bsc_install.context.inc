@@ -138,9 +138,9 @@ function bsc_install_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'webform-client-block-14' => array(
+        'webform-client-block-7' => array(
           'module' => 'webform',
-          'delta' => 'client-block-14',
+          'delta' => 'client-block-7',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -148,6 +148,7 @@ function bsc_install_context_default_contexts() {
     ),
   );
   $context->condition_mode = 0;
+  $export['landing_pages'] = $context;
 
   return $export;
 }
