@@ -80,21 +80,21 @@ function bsc_install_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_landing_page';
-  $strongarm->value = 'COMMENT_NODE_HIDDEN';
+  $strongarm->value = '0'; // COMMENT_NODE_HIDDEN
   $export['comment_landing_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_page';
-  $strongarm->value = 'COMMENT_NODE_HIDDEN';
+  $strongarm->value = '0'; // COMMENT_NODE_HIDDEN
   $export['comment_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_product_display';
-  $strongarm->value = 'COMMENT_NODE_HIDDEN';
+  $strongarm->value = '0'; // COMMENT_NODE_HIDDEN
   $export['comment_product_display'] = $strongarm;
 
   $strongarm = new stdClass();
