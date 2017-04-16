@@ -119,5 +119,35 @@ function bsc_install_context_default_contexts() {
   $context->condition_mode = 0;
   $export['news_or_blog'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'landing_pages';
+  $context->description = '';
+  $context->tag = 'Landing Page';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'landing_page' => 'landing_page',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'webform-client-block-14' => array(
+          'module' => 'webform',
+          'delta' => 'client-block-14',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
   return $export;
 }
