@@ -86,14 +86,6 @@ function bsc_install_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: 'access dashboard'.
-  $permissions['access dashboard'] = array(
-    'name' => 'access dashboard',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'dashboard',
-  );
 
   // Exported permission: 'access own webform results'.
   $permissions['access own webform results'] = array(
@@ -545,24 +537,6 @@ function bsc_install_user_default_permissions() {
     'module' => 'rules',
   );
 
-  // Exported permission: 'administer search'.
-  $permissions['administer search'] = array(
-    'name' => 'administer search',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'search',
-  );
-
-  // Exported permission: 'administer shortcuts'.
-  $permissions['administer shortcuts'] = array(
-    'name' => 'administer shortcuts',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'shortcut',
-  );
-
   // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -876,15 +850,6 @@ function bsc_install_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'customize shortcut links'.
-  $permissions['customize shortcut links'] = array(
-    'name' => 'customize shortcut links',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'shortcut',
   );
 
   // Exported permission: 'delete all webform submissions'.
@@ -1382,15 +1347,6 @@ function bsc_install_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'search content'.
-  $permissions['search content'] = array(
-    'name' => 'search content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'search',
-  );
-
   // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
@@ -1398,15 +1354,6 @@ function bsc_install_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: 'switch shortcut sets'.
-  $permissions['switch shortcut sets'] = array(
-    'name' => 'switch shortcut sets',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'shortcut',
   );
 
   // Exported permission: 'update payments'.
@@ -1425,15 +1372,6 @@ function bsc_install_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'php',
-  );
-
-  // Exported permission: 'use advanced search'.
-  $permissions['use advanced search'] = array(
-    'name' => 'use advanced search',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'search',
   );
 
   // Exported permission: 'use ipe with page manager'.
