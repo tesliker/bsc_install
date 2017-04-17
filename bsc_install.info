@@ -57,6 +57,7 @@ features[box][] = install_boxes_6
 features[box][] = site_logo
 features[context][] = all_pages
 features[context][] = front_page
+features[context][] = landing_pages
 features[context][] = news_or_blog
 features[ctools][] = boxes:box:1
 features[ctools][] = context:context:3
