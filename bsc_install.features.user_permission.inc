@@ -636,15 +636,6 @@ function bsc_install_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'bypass advanced aggregation'.
-  $permissions['bypass advanced aggregation'] = array(
-    'name' => 'bypass advanced aggregation',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'advagg',
-  );
-
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',

@@ -41,13 +41,6 @@ function bsc_install_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'advagg_cron_timestamp';
-  $strongarm->value = 1424971511;
-  $export['advagg_cron_timestamp'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'ais_adaptive_styles';
   $strongarm->value = array(
     0 => array(
