@@ -329,7 +329,6 @@ features[variable][] = additional_settings__active_tab_links
 features[variable][] = additional_settings__active_tab_slideshow_image
 features[variable][] = admin_menu_tweak_modules
 features[variable][] = admin_theme
-features[variable][] = advagg_cron_timestamp
 features[variable][] = ais_adaptive_styles
 features[variable][] = clean_url
 features[variable][] = comment_landing_page
