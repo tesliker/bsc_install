@@ -38,6 +38,12 @@ function bsc_install_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
+        'boxes-copyright' => array(
+          'module' => 'boxes',
+          'delta' => 'copyright',
+          'region' => 'footer',
+          'weight' => '-9',
+        ),
       ),
     ),
   );
