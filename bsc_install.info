@@ -395,6 +395,7 @@ features[variable][] = path_alias_whitelist
 features[variable][] = pathauto_blog_pattern
 features[variable][] = pathauto_forum_pattern
 features[variable][] = pathauto_node_article_pattern
+features[variable][] = pathauto_node_landing_page_pattern
 features[variable][] = pathauto_node_page_pattern
 features[variable][] = pathauto_node_pattern
 features[variable][] = pathauto_node_product_display_pattern
