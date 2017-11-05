@@ -15,7 +15,7 @@ function bsc_install_default_box() {
   $box->api_version = 1;
   $box->delta = 'branding_cart';
   $box->plugin_key = 'simple';
-  $box->title = '<none>';
+  $box->title = '';
   $box->description = 'Branding shopping cart';
   $box->options = array(
     'body' => array(
