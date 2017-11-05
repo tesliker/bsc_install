@@ -136,7 +136,7 @@ function bsc_install_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_default_timezone';
-  $strongarm->value = 'UTC';
+  $strongarm->value = 'America/New_York';
   $export['date_default_timezone'] = $strongarm;
 
   $strongarm = new stdClass();

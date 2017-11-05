@@ -13,6 +13,28 @@ function bsc_install_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'branding_cart';
+  $box->plugin_key = 'simple';
+  $box->title = '<none>';
+  $box->description = 'Branding shopping cart';
+  $box->options = array(
+    'body' => array(
+      'value' => '<div class="block-cart">
+  <div class="top-cart-title text-right">
+    <a href="/cart">
+      <span class="cart-icon-wrapper"><i class="fa fa-shopping-cart"></i></span><span>My Shopping Cart</span><i class="fa fa-caret-down"></i>
+    </a>
+  </div>
+</div>',
+      'format' => 'php_code',
+    ),
+    'additional_classes' => '',
+  );
+  $export['branding_cart'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'copyright';
   $box->plugin_key = 'simple';
   $box->title = '';
