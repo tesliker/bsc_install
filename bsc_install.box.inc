@@ -13,6 +13,22 @@ function bsc_install_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'copyright';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Copyright';
+  $box->options = array(
+    'body' => array(
+      'value' => '<p>Copyright xxx biz, 2017. &nbsp;Digital Marketing Support&nbsp;by <a href="http://www.broadstreetconsulting.net" target="_blank">Broadstreet Consulting</a></p>
+',
+      'format' => 'full_html',
+    ),
+  );
+  $export['copyright'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'install_boxes_1';
   $box->plugin_key = 'simple';
   $box->title = 'Client Centered';
@@ -154,22 +170,6 @@ function bsc_install_default_box() {
     ),
   );
   $export['site_logo'] = $box;
-
-  $box = new stdClass();
-  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
-  $box->api_version = 1;
-  $box->delta = 'copyright';
-  $box->plugin_key = 'simple';
-  $box->title = '';
-  $box->description = 'Copyright';
-  $box->options = array(
-    'body' => array(
-      'value' => '<p>Copyright xxx biz, 2017. &nbsp;Digital Marketing Support&nbsp;by <a href="http://www.broadstreetconsulting.net" target="_blank">Broadstreet Consulting</a></p>
-',
-      'format' => 'full_html',
-    ),
-  );
-  $export['copyright'] = $box;
 
   return $export;
 }

@@ -47,6 +47,7 @@ dependencies[] = views
 dependencies[] = views_responsive_grid
 dependencies[] = webform
 dependencies[] = wysiwyg
+features[box][] = copyright
 features[box][] = install_boxes_1
 features[box][] = install_boxes_2
 features[box][] = install_boxes_3
