@@ -32,6 +32,12 @@ function bsc_install_context_default_contexts() {
           'region' => 'branding_left',
           'weight' => '-10',
         ),
+        'boxes-branding_cart' => array(
+          'module' => 'boxes',
+          'delta' => 'branding_cart',
+          'region' => 'branding_right',
+          'weight' => '-10',
+        ),
         'panels_mini-footer' => array(
           'module' => 'panels_mini',
           'delta' => 'footer',
