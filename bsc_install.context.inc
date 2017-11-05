@@ -38,12 +38,6 @@ function bsc_install_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
-        'system-powered-by' => array(
-          'module' => 'system',
-          'delta' => 'powered-by',
-          'region' => 'footer',
-          'weight' => '-9',
-        ),
       ),
     ),
   );
