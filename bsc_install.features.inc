@@ -11,6 +11,9 @@ function bsc_install_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "boxes" && $api == "box") {
     return array("version" => "1");
   }
+  if ($module == "captcha" && $api == "captcha") {
+    return array("version" => "1");
+  }
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
@@ -149,6 +152,22 @@ function bsc_install_image_default_styles() {
           'upscale' => '',
         ),
         'weight' => 3,
+      ),
+    ),
+  );
+
+  // Exported image style: article.
+  $styles['article'] = array(
+    'label' => 'article',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 350,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 1,
       ),
     ),
   );

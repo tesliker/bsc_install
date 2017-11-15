@@ -65,6 +65,13 @@ function bsc_install_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'captcha_default_challenge';
+  $strongarm->value = 'recaptcha/reCAPTCHA';
+  $export['captcha_default_challenge'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'clean_url';
   $strongarm->value = TRUE;
   $export['clean_url'] = $strongarm;
@@ -315,6 +322,20 @@ function bsc_install_strongarm() {
   $strongarm->name = 'filter_fallback_format';
   $strongarm->value = 'plain_text';
   $export['filter_fallback_format'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'honeypot_protect_all_forms';
+  $strongarm->value = 1;
+  $export['honeypot_protect_all_forms'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'honeypot_time_limit';
+  $strongarm->value = '0';
+  $export['honeypot_time_limit'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
