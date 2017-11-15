@@ -10,6 +10,7 @@ dependencies[] = block_class
 dependencies[] = boxes
 dependencies[] = captcha
 dependencies[] = checklistapi
+dependencies[] = colorbox
 dependencies[] = commerce_cart
 dependencies[] = commerce_customer_ui
 dependencies[] = commerce_payment_ui
